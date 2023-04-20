@@ -20,9 +20,6 @@ public class Allergy
 	private String allergyNotes;
 
 	
-	
-	
-	
 	public Allergy() {
 		super();
 	}

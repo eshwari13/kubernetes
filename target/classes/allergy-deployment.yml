@@ -13,8 +13,8 @@ spec:
     app: allergy-service
    spec:
     containers:
-     - name: itsmepratham23/g3-allergy-service
-       image: itsmepratham23/g3-allergy-service
+     - name: eshwari13/g3-allergy-service
+       image: eshwari13/g3-allergy-service
        ports:
         - containerPort: 9002
        env:
