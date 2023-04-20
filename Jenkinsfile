@@ -1,5 +1,7 @@
 pipeline {
-  
+   tools {
+        maven 'Maven3'
+    }
     agent any
     environment {
         registry = "eshwari13/g3-allergy-service:latest"
