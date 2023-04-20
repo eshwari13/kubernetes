@@ -15,7 +15,8 @@ pipeline {
         }
       stage ('Build') {
           steps {
-            sh 'mvn clean install'           
+           sh 'chmod a+x mvnw'
+				sh './mvnw clean package -DskipTests=true'     
             }
       }
     // Building Docker images
