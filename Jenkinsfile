@@ -28,7 +28,7 @@ pipeline {
      steps{  
          script {
                 sh 'echo eshwari13 | docker login -u eshwari13 --password-stdin '
-                sh 'eshwari13/g3-allergy-service'
+                sh 'docker push eshwari13/g3-allergy-service'
          }
         }
       }
