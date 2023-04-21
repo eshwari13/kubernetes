@@ -27,7 +27,7 @@ pipeline {
     stage('Pushing to dockerhub') {
      steps{  
          script {
-                sh 'echo eshwari13 | docker login eshwari13 --password-stdin '
+                sh 'echo eshwari13 | docker login -u eshwari13 --password-stdin '
                 sh 'eshwari13/g3-allergy-service:latest'
          }
         }
