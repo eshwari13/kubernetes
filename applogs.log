@@ -1941,3 +1941,42 @@ Caused by: java.net.SocketTimeoutException: Connect timed out
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.14.jar:4.5.14]
 	... 48 common frames omitted
 
+2023-04-21T07:23:52.097+05:30  INFO 10764 --- [main] c.c.a.AllergyServiceApplicationTests     : Starting AllergyServiceApplicationTests using Java 17.0.6 with PID 10764 (started by pc in E:\New folder\g3-allergy-services)
+2023-04-21T07:23:52.127+05:30  INFO 10764 --- [main] c.c.a.AllergyServiceApplicationTests     : The following 1 profile is active: "production"
+2023-04-21T07:23:55.754+05:30  INFO 10764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T07:23:56.073+05:30  INFO 10764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 300 ms. Found 1 JPA repository interfaces.
+2023-04-21T07:23:56.774+05:30  INFO 10764 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7bc34de1-41c2-3d7b-b481-431129f8ee16
+2023-04-21T07:23:58.383+05:30  INFO 10764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-21T07:23:58.579+05:30  INFO 10764 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-21T07:23:59.151+05:30  INFO 10764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-21T07:23:59.387+05:30  INFO 10764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-21T07:24:00.140+05:30  INFO 10764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T07:24:03.180+05:30  INFO 10764 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b7d5d8d
+2023-04-21T07:24:03.185+05:30  INFO 10764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T07:24:03.772+05:30  INFO 10764 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T07:24:06.125+05:30  INFO 10764 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-21T07:24:06.155+05:30  INFO 10764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T07:24:06.838+05:30  WARN 10764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T07:24:12.810+05:30  WARN 10764 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-21T07:24:12.823+05:30  INFO 10764 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-04-21T07:24:13.056+05:30  INFO 10764 --- [main] c.c.a.AllergyServiceApplicationTests     : Started AllergyServiceApplicationTests in 654.641 seconds (process running for 659.281)
+2023-04-21T07:24:13.461+05:30  INFO 10764 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:24:13.462+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:24:13.467+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2023-04-21T07:24:13.514+05:30  INFO 10764 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Allergy List:[]
+2023-04-21T07:24:13.515+05:30 ERROR 10764 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Couldn't find any allergy in the databse
+2023-04-21T07:24:13.600+05:30  INFO 10764 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:24:13.601+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:24:13.605+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-04-21T07:24:13.612+05:30  INFO 10764 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Allergy by id found:Optional.empty
+2023-04-21T07:24:13.615+05:30 ERROR 10764 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Couldn't find allergy by the id1
+2023-04-21T07:24:13.644+05:30  INFO 10764 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:24:13.645+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:24:13.650+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2023-04-21T07:24:13.771+05:30  INFO 10764 --- [main] c.c.a.controller.AllergyController       : Allergy controller passing controller to allergy service
+2023-04-21T07:24:14.098+05:30  INFO 10764 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:24:14.098+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:24:14.101+05:30  INFO 10764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-04-21T07:24:14.227+05:30  INFO 10764 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T07:24:14.574+05:30  INFO 10764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T07:24:15.780+05:30  INFO 10764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
