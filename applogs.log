@@ -1980,3 +1980,42 @@ Caused by: java.net.SocketTimeoutException: Connect timed out
 2023-04-21T07:24:14.227+05:30  INFO 10764 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-21T07:24:14.574+05:30  INFO 10764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-04-21T07:24:15.780+05:30  INFO 10764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T07:51:01.511+05:30  INFO 19108 --- [main] c.c.a.AllergyServiceApplicationTests     : Starting AllergyServiceApplicationTests using Java 17.0.6 with PID 19108 (started by pc in E:\New folder\g3-allergy-services)
+2023-04-21T07:51:01.521+05:30  INFO 19108 --- [main] c.c.a.AllergyServiceApplicationTests     : The following 1 profile is active: "production"
+2023-04-21T07:51:07.843+05:30  INFO 19108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T07:51:08.463+05:30  INFO 19108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 562 ms. Found 1 JPA repository interfaces.
+2023-04-21T07:51:09.333+05:30  INFO 19108 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7bc34de1-41c2-3d7b-b481-431129f8ee16
+2023-04-21T07:51:11.985+05:30  INFO 19108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-21T07:51:12.119+05:30  INFO 19108 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-21T07:51:12.868+05:30  INFO 19108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-21T07:51:13.300+05:30  INFO 19108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-21T07:51:13.872+05:30  INFO 19108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T07:51:16.816+05:30  INFO 19108 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@482b6acc
+2023-04-21T07:51:16.823+05:30  INFO 19108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T07:51:17.450+05:30  INFO 19108 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T07:51:20.618+05:30  INFO 19108 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-21T07:51:20.648+05:30  INFO 19108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T07:51:21.864+05:30  WARN 19108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T07:51:32.514+05:30  WARN 19108 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-21T07:51:32.558+05:30  INFO 19108 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-04-21T07:51:33.027+05:30  INFO 19108 --- [main] c.c.a.AllergyServiceApplicationTests     : Started AllergyServiceApplicationTests in 664.803 seconds (process running for 669.91)
+2023-04-21T07:51:33.627+05:30  INFO 19108 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:51:33.628+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:51:33.635+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2023-04-21T07:51:33.701+05:30  INFO 19108 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Allergy List:[]
+2023-04-21T07:51:33.705+05:30 ERROR 19108 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Couldn't find any allergy in the databse
+2023-04-21T07:51:33.832+05:30  INFO 19108 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:51:33.834+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:51:33.841+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2023-04-21T07:51:33.847+05:30  INFO 19108 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Allergy by id found:Optional.empty
+2023-04-21T07:51:33.849+05:30 ERROR 19108 --- [main] c.c.a.service.impl.AllergyServiceImpl    : Couldn't find allergy by the id1
+2023-04-21T07:51:33.889+05:30  INFO 19108 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:51:33.890+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:51:33.896+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2023-04-21T07:51:34.130+05:30  INFO 19108 --- [main] c.c.a.controller.AllergyController       : Allergy controller passing controller to allergy service
+2023-04-21T07:51:34.571+05:30  INFO 19108 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-21T07:51:34.572+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-21T07:51:34.579+05:30  INFO 19108 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2023-04-21T07:51:34.801+05:30  INFO 19108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T07:51:35.377+05:30  INFO 19108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T07:51:35.411+05:30  INFO 19108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
