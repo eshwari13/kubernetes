@@ -13,11 +13,7 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/eshwari13/kubernetes.git']]])     
             }
         }
-      stage ('Build') {
-          steps {
-				 sh 'mvn clean install -DskipTests'             
-            }
-      }
+      
     // Building Docker images
     stage('Building image') {
       steps{
